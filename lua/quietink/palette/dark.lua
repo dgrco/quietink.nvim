@@ -13,7 +13,7 @@ return {
   border = "#3a3a36",  -- window borders, separators
 
   -- text
-  fg = "#d2d2cb",       -- default text
+  fg = "#efefeb",       -- default text
   fg_dim = "#9b9b8d",   -- secondary / inactive text
   comment = "#5b5b56",  -- comments
   emphasis = "#efefeb", -- titles, bold UI text

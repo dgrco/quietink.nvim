@@ -4,13 +4,13 @@
 
 [colors.primary]
 background = "#121212"
-foreground = "#d2d2cb"
+foreground = "#efefeb"
 dim_foreground = "#9b9b8d"
 bright_foreground = "#efefeb"
 
 [colors.cursor]
 text = "#121212"
-cursor = "#d2d2cb"
+cursor = "#efefeb"
 
 [colors.vi_mode_cursor]
 text = "#121212"
@@ -44,7 +44,7 @@ yellow = "#cdac78"
 blue = "#97adc5"
 magenta = "#a6b5c5"
 cyan = "#93a493"
-white = "#d2d2cb"
+white = "#efefeb"
 
 [colors.bright]
 black = "#9b9b8d"
