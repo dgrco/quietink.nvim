@@ -1,0 +1,44 @@
+---@class Quietink.Palette
+---@field bg string
+---@field bg_alt string
+---@field dim string
+---@field line string
+---@field sel string
+---@field border string
+---@field fg string
+---@field fg_dim string
+---@field comment string
+---@field emphasis string
+---@field keyword string
+---@field func string
+---@field type string
+---@field string string
+---@field const_ string
+---@field punct string
+---@field tag string
+---@field info string
+---@field hint string
+---@field warning string
+---@field danger string
+---@field success string
+---@field added string
+---@field changed string
+---@field removed string
+
+---@class Quietink.Styles
+---@field functions table
+---@field keywords table
+---@field comments table
+---@field strings table
+---@field constants table
+
+---@class Quietink.Config
+---@field transparent boolean
+---@field theme table<string,string>
+---@field auto boolean
+---@field cache boolean
+---@field styles Quietink.Styles
+---@field colors table<string,string>
+---@field on_highlights function|nil
+
+return {}

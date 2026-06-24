@@ -1,0 +1,28 @@
+# Quietink (dark) for Lazygit
+# Place under: ~/.config/lazygit/config.yml -> gui.theme
+# Or import via: gui.theme: <paste below>
+
+gui:
+  theme:
+    activeBorderColor:
+      - "#e8e8e2"
+      - bold
+    inactiveBorderColor:
+      - "#3a3a36"
+    optionsTextColor:
+      - "#8aa0b8"
+    selectedLineBgColor:
+      - "#262626"
+    selectedRangeBgColor:
+      - "#262626"
+    cherryPickedCommitBgColor:
+      - "#8aab84"
+    cherryPickedCommitFgColor:
+      - "#121212"
+    unstagedChangesColor:
+      - "#c0726a"
+    defaultFgColor:
+      - "#c4c4c0"
+    searchingActiveBorderColor:
+      - "#c2a06a"
+  nerdFontsVersion: "3"

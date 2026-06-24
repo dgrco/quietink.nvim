@@ -1,0 +1,56 @@
+---@param c Quietink.Palette
+return function(c)
+  return {
+    -- neo-tree.nvim
+    NeoTreeNormal = { fg = c.fg, bg = c.bg_alt },
+    NeoTreeNormalNC = { fg = c.fg, bg = c.bg_alt },
+    NeoTreeDirectoryIcon = { fg = c.type },
+    NeoTreeDirectoryName = { fg = c.fg },
+    NeoTreeRootName = { fg = c.emphasis, bold = true },
+    NeoTreeFileName = { fg = c.fg },
+    NeoTreeFileNameOpened = { fg = c.emphasis },
+    NeoTreeFileIcon = { fg = c.fg_dim },
+    NeoTreeIndentMarker = { fg = c.border },
+    NeoTreeExpander = { fg = c.fg_dim },
+    NeoTreeGitAdded = { fg = c.added },
+    NeoTreeGitDeleted = { fg = c.removed },
+    NeoTreeGitModified = { fg = c.changed },
+    NeoTreeGitIgnored = { fg = c.fg_dim },
+    NeoTreeGitUnstaged = { fg = c.changed },
+    NeoTreeGitStaged = { fg = c.added },
+    NeoTreeSymbolicLinkTarget = { fg = c.tag },
+    NeoTreeTitleBar = { fg = c.bg, bg = c.func },
+    NeoTreeCursorLine = { bg = c.sel },
+    NeoTreeFloatBorder = { fg = c.border },
+
+    -- oil.nvim
+    OilDir = { fg = c.type, bold = true },
+    OilDirIcon = { fg = c.type },
+    OilFile = { fg = c.fg },
+    OilLink = { fg = c.tag },
+    OilLinkTarget = { fg = c.fg_dim },
+    OilCopy = { fg = c.added },
+    OilMove = { fg = c.changed },
+    OilChange = { fg = c.changed },
+    OilCreate = { fg = c.added },
+    OilDelete = { fg = c.removed },
+    OilPermissionNone = { fg = c.fg_dim },
+    OilPermissionRead = { fg = c.const_ },
+    OilPermissionWrite = { fg = c.danger },
+    OilPermissionExecute = { fg = c.success },
+    OilTypeDir = { fg = c.type },
+    OilTypeFile = { fg = c.fg_dim },
+    OilTypeLink = { fg = c.tag },
+
+    -- mini.icons
+    MiniIconsAzure = { fg = c.info },
+    MiniIconsBlue = { fg = c.info },
+    MiniIconsCyan = { fg = c.type },
+    MiniIconsGreen = { fg = c.success },
+    MiniIconsGrey = { fg = c.fg_dim },
+    MiniIconsOrange = { fg = c.const_ },
+    MiniIconsPurple = { fg = c.tag },
+    MiniIconsRed = { fg = c.danger },
+    MiniIconsYellow = { fg = c.warning },
+  }
+end

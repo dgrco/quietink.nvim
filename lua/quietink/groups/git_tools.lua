@@ -1,0 +1,78 @@
+---@param c Quietink.Palette
+return function(c)
+  return {
+    -- gitsigns.nvim
+    GitSignsAdd = { fg = c.added },
+    GitSignsChange = { fg = c.changed },
+    GitSignsDelete = { fg = c.removed },
+    GitSignsAddLn = { bg = c.bg_alt },
+    GitSignsChangeLn = { bg = c.bg_alt },
+    GitSignsDeleteLn = { bg = c.bg_alt },
+    GitSignsCurrentLineBlame = { fg = c.fg_dim, italic = true },
+    GitSignsAddPreview = { fg = c.added, bg = c.bg_alt },
+    GitSignsDeletePreview = { fg = c.removed, bg = c.bg_alt },
+    GitSignsAddInline = { fg = c.added, bg = c.bg_alt },
+    GitSignsChangeInline = { fg = c.changed, bg = c.bg_alt },
+    GitSignsDeleteInline = { fg = c.removed, bg = c.bg_alt },
+
+    -- mason.nvim
+    MasonNormal = { fg = c.fg, bg = c.bg_alt },
+    MasonHeader = { fg = c.bg, bg = c.func, bold = true },
+    MasonHeaderSecondary = { fg = c.bg, bg = c.type, bold = true },
+    MasonHighlight = { fg = c.func },
+    MasonHighlightBlock = { fg = c.bg, bg = c.func },
+    MasonHighlightBlockBold = { fg = c.bg, bg = c.func, bold = true },
+    MasonHighlightSecondary = { fg = c.type },
+    MasonHighlightBlockSecondary = { fg = c.bg, bg = c.type },
+    MasonHighlightBlockBoldSecondary = { fg = c.bg, bg = c.type, bold = true },
+    MasonMuted = { fg = c.fg_dim },
+    MasonMutedBlock = { fg = c.bg, bg = c.fg_dim },
+    MasonError = { fg = c.danger },
+    MasonWarning = { fg = c.warning },
+    MasonHeading = { fg = c.emphasis, bold = true },
+
+    -- rainbow-delimiters.nvim (kept low-contrast & grayscale-leaning -- minimalist spirit)
+    RainbowDelimiterRed = { fg = c.danger },
+    RainbowDelimiterYellow = { fg = c.warning },
+    RainbowDelimiterBlue = { fg = c.info },
+    RainbowDelimiterOrange = { fg = c.const_ },
+    RainbowDelimiterGreen = { fg = c.success },
+    RainbowDelimiterViolet = { fg = c.tag },
+    RainbowDelimiterCyan = { fg = c.type },
+
+    -- render-markdown.nvim
+    RenderMarkdownH1 = { fg = c.emphasis, bold = true },
+    RenderMarkdownH2 = { fg = c.emphasis, bold = true },
+    RenderMarkdownH3 = { fg = c.fg, bold = true },
+    RenderMarkdownH4 = { fg = c.fg, bold = true },
+    RenderMarkdownH5 = { fg = c.fg, bold = true },
+    RenderMarkdownH6 = { fg = c.fg_dim, bold = true },
+    RenderMarkdownH1Bg = { bg = c.bg_alt },
+    RenderMarkdownH2Bg = { bg = c.bg_alt },
+    RenderMarkdownCode = { bg = c.bg_alt },
+    RenderMarkdownCodeInline = { bg = c.bg_alt, fg = c.string },
+    RenderMarkdownBullet = { fg = c.func },
+    RenderMarkdownQuote = { fg = c.fg_dim, italic = true },
+    RenderMarkdownDash = { fg = c.border },
+    RenderMarkdownLink = { fg = c.info, underline = true },
+    RenderMarkdownTableHead = { fg = c.emphasis, bold = true },
+    RenderMarkdownTableRow = { fg = c.fg },
+    RenderMarkdownTableFill = { fg = c.border },
+    RenderMarkdownChecked = { fg = c.success },
+    RenderMarkdownUnchecked = { fg = c.fg_dim },
+    RenderMarkdownTodo = { fg = c.warning },
+
+    -- trouble.nvim
+    TroubleNormal = { fg = c.fg, bg = c.bg_alt },
+    TroubleText = { fg = c.fg },
+    TroubleCount = { fg = c.bg, bg = c.type, bold = true },
+    TroubleIndent = { fg = c.border },
+    TroubleFoldIcon = { fg = c.fg_dim },
+    TroubleLocation = { fg = c.fg_dim },
+    TroubleFile = { fg = c.type },
+    TroubleSource = { fg = c.fg_dim, italic = true },
+    TroubleCode = { fg = c.fg_dim },
+    TroublePos = { fg = c.fg_dim },
+    TroublePreview = { bg = c.sel },
+  }
+end

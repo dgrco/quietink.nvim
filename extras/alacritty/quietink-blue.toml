@@ -1,0 +1,60 @@
+# Quietink (blue) for Alacritty
+# Place under: ~/.config/alacritty/themes/quietink-blue.toml
+# Then in alacritty.toml: [general] import = ["~/.config/alacritty/themes/quietink-blue.toml"]
+
+[colors.primary]
+background = "#10131a"
+foreground = "#bcc2cc"
+dim_foreground = "#7d838f"
+bright_foreground = "#e4e9f2"
+
+[colors.cursor]
+text = "#10131a"
+cursor = "#bcc2cc"
+
+[colors.vi_mode_cursor]
+text = "#10131a"
+cursor = "#aecdf2"
+
+[colors.selection]
+text = "CellForeground"
+background = "#212835"
+
+[colors.search.matches]
+foreground = "#10131a"
+background = "#c2a06a"
+
+[colors.search.focused_match]
+foreground = "#10131a"
+background = "#aecdf2"
+
+[colors.hints]
+line_indicator = { foreground = "#7d838f", background = "#161a22" }
+
+[colors.hints.start]
+foreground = "#10131a"
+background = "#c2a06a"
+
+[colors.hints.end]
+foreground = "#10131a"
+background = "#7d838f"
+
+[colors.normal]
+black = "#0b0d12"
+red = "#c0726a"
+green = "#83ab9e"
+yellow = "#c2a06a"
+blue = "#7fa8d6"
+magenta = "#a0aebf"
+cyan = "#7b94b3"
+white = "#bcc2cc"
+
+[colors.bright]
+black = "#7d838f"
+red = "#c0726a"
+green = "#83ab9e"
+yellow = "#c2a06a"
+blue = "#7fa8d6"
+magenta = "#a0aebf"
+cyan = "#7b94b3"
+white = "#e4e9f2"

@@ -1,0 +1,56 @@
+---@param c Quietink.Palette
+return function(c)
+  return {
+    BlinkCmpMenu = { fg = c.fg, bg = c.bg_alt },
+    BlinkCmpMenuBorder = { fg = c.border, bg = c.bg_alt },
+    BlinkCmpMenuSelection = { bg = c.sel },
+    BlinkCmpScrollBarThumb = { bg = c.border },
+    BlinkCmpScrollBarGutter = { bg = c.bg_alt },
+
+    BlinkCmpLabel = { fg = c.fg },
+    BlinkCmpLabelMatch = { fg = c.func, bold = true },
+    BlinkCmpLabelDeprecated = { fg = c.fg_dim, strikethrough = true },
+    BlinkCmpLabelDescription = { fg = c.fg_dim },
+    BlinkCmpLabelDetail = { fg = c.fg_dim },
+
+    BlinkCmpKind = { fg = c.type },
+    BlinkCmpKindText = { fg = c.fg_dim },
+    BlinkCmpKindMethod = { fg = c.func },
+    BlinkCmpKindFunction = { fg = c.func },
+    BlinkCmpKindConstructor = { fg = c.type },
+    BlinkCmpKindField = { fg = c.fg },
+    BlinkCmpKindVariable = { fg = c.fg },
+    BlinkCmpKindClass = { fg = c.type },
+    BlinkCmpKindInterface = { fg = c.type },
+    BlinkCmpKindModule = { fg = c.type },
+    BlinkCmpKindProperty = { fg = c.fg },
+    BlinkCmpKindUnit = { fg = c.const_ },
+    BlinkCmpKindValue = { fg = c.const_ },
+    BlinkCmpKindEnum = { fg = c.type },
+    BlinkCmpKindKeyword = { fg = c.keyword },
+    BlinkCmpKindSnippet = { fg = c.tag },
+    BlinkCmpKindColor = { fg = c.tag },
+    BlinkCmpKindFile = { fg = c.fg },
+    BlinkCmpKindReference = { fg = c.fg_dim },
+    BlinkCmpKindFolder = { fg = c.type },
+    BlinkCmpKindEnumMember = { fg = c.const_ },
+    BlinkCmpKindConstant = { fg = c.const_ },
+    BlinkCmpKindStruct = { fg = c.type },
+    BlinkCmpKindEvent = { fg = c.tag },
+    BlinkCmpKindOperator = { fg = c.punct },
+    BlinkCmpKindTypeParameter = { fg = c.type },
+    BlinkCmpKindCopilot = { fg = c.info },
+
+    BlinkCmpSource = { fg = c.fg_dim, italic = true },
+    BlinkCmpGhostText = { fg = c.fg_dim, italic = true },
+
+    BlinkCmpSignatureHelp = { fg = c.fg, bg = c.bg_alt },
+    BlinkCmpSignatureHelpBorder = { fg = c.border, bg = c.bg_alt },
+    BlinkCmpSignatureHelpActiveParameter = { fg = c.emphasis, bold = true },
+
+    BlinkCmpDoc = { fg = c.fg, bg = c.bg_alt },
+    BlinkCmpDocBorder = { fg = c.border, bg = c.bg_alt },
+    BlinkCmpDocSeparator = { fg = c.border },
+    BlinkCmpDocCursorLine = { bg = c.sel },
+  }
+end

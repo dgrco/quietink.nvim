@@ -1,0 +1,57 @@
+---@param c Quietink.Palette
+return function(c)
+  return {
+    -- telescope.nvim
+    TelescopeNormal = { fg = c.fg, bg = c.bg_alt },
+    TelescopeBorder = { fg = c.border, bg = c.bg_alt },
+    TelescopeTitle = { fg = c.emphasis, bold = true },
+    TelescopePromptNormal = { fg = c.fg, bg = c.bg_alt },
+    TelescopePromptBorder = { fg = c.border, bg = c.bg_alt },
+    TelescopePromptTitle = { fg = c.bg, bg = c.func, bold = true },
+    TelescopePromptPrefix = { fg = c.func },
+    TelescopeResultsTitle = { fg = c.bg, bg = c.type, bold = true },
+    TelescopePreviewTitle = { fg = c.bg, bg = c.success, bold = true },
+    TelescopeSelection = { bg = c.sel, fg = c.emphasis },
+    TelescopeSelectionCaret = { fg = c.func },
+    TelescopeMultiSelection = { fg = c.const_ },
+    TelescopeMatching = { fg = c.func, bold = true },
+
+    -- fzf-lua
+    FzfLuaNormal = { fg = c.fg, bg = c.bg_alt },
+    FzfLuaBorder = { fg = c.border, bg = c.bg_alt },
+    FzfLuaTitle = { fg = c.emphasis, bold = true },
+    FzfLuaPreviewNormal = { fg = c.fg, bg = c.bg_alt },
+    FzfLuaPreviewBorder = { fg = c.border, bg = c.bg_alt },
+    FzfLuaPreviewTitle = { fg = c.bg, bg = c.success, bold = true },
+    FzfLuaCursor = { fg = c.bg, bg = c.fg },
+    FzfLuaCursorLine = { bg = c.sel },
+    FzfLuaScrollBorderEmpty = { fg = c.border },
+    FzfLuaScrollBorderFull = { fg = c.func },
+    FzfLuaHeaderBind = { fg = c.type },
+    FzfLuaHeaderText = { fg = c.fg_dim },
+    FzfLuaPathColNr = { fg = c.const_ },
+    FzfLuaPathLineNr = { fg = c.fg_dim },
+    FzfLuaBufName = { fg = c.fg },
+    FzfLuaBufNr = { fg = c.const_ },
+    FzfLuaBufFlagCur = { fg = c.func },
+    FzfLuaBufFlagAlt = { fg = c.type },
+    FzfLuaTabTitle = { fg = c.bg, bg = c.func, bold = true },
+    FzfLuaTabMarker = { fg = c.danger },
+    FzfLuaLivePrompt = { fg = c.func },
+    FzfLuaFzfMatch = { fg = c.func, bold = true },
+
+    -- mini.pick
+    MiniPickNormal = { fg = c.fg, bg = c.bg_alt },
+    MiniPickBorder = { fg = c.border, bg = c.bg_alt },
+    MiniPickBorderText = { fg = c.emphasis, bold = true },
+    MiniPickIconDirectory = { fg = c.type },
+    MiniPickIconFile = { fg = c.fg_dim },
+    MiniPickHeader = { fg = c.fg_dim },
+    MiniPickMatchCurrent = { bg = c.sel },
+    MiniPickMatchMarked = { fg = c.const_ },
+    MiniPickMatchRanges = { fg = c.func, bold = true },
+    MiniPickPreviewLine = { bg = c.sel },
+    MiniPickPreviewRegion = { bg = c.sel },
+    MiniPickPrompt = { fg = c.func },
+  }
+end
