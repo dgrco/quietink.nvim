@@ -28,9 +28,6 @@ background = "#c2a06a"
 foreground = "#121212"
 background = "#e8e8e2"
 
-[colors.hints]
-line_indicator = { foreground = "#8a8a84", background = "#1a1a1a" }
-
 [colors.hints.start]
 foreground = "#121212"
 background = "#c2a06a"

@@ -1,6 +1,7 @@
-dofile("../test/vim_shim.lua")
-
-package.path = package.path .. ";../lua/?.lua;../lua/?/init.lua"
+-- resolve paths relative to this script's own location, not the cwd,
+-- so this works whether you run it from repo root or from extras/
+local script_dir = (arg[0] or ""):match("(.*/)") or "./"
+package.path = package.path .. ";" .. script_dir .. "../lua/?.lua;" .. script_dir .. "../lua/?/init.lua"
 
 local variants = { "dark", "blue", "green", "light" }
 
@@ -77,9 +78,6 @@ local function gen_alacritty(variant, c)
   add("[colors.search.focused_match]")
   add('foreground = "' .. c.bg .. '"')
   add('background = "' .. c.func .. '"')
-  add("")
-  add("[colors.hints]")
-  add('line_indicator = { foreground = "' .. c.fg_dim .. '", background = "' .. c.bg_alt .. '" }')
   add("")
   add("[colors.hints.start]")
   add('foreground = "' .. c.bg .. '"')
@@ -170,8 +168,8 @@ for _, variant in ipairs(variants) do
   package.loaded["quietink.palette." .. variant] = nil
   local raw = require("quietink.palette." .. variant)
 
-  write_file("alacritty/quietink-" .. variant .. ".toml", gen_alacritty(variant, raw))
-  write_file("foot/quietink-" .. variant .. ".ini", gen_foot(variant, raw))
+  write_file(script_dir .. "alacritty/quietink-" .. variant .. ".toml", gen_alacritty(variant, raw))
+  write_file(script_dir .. "foot/quietink-" .. variant .. ".ini", gen_foot(variant, raw))
 end
 
 print("\nDONE")
