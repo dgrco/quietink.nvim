@@ -5,7 +5,7 @@ return function(c, cfg)
 
   return {
     -- base syntax (legacy, still used as fallback)
-    Comment = vim.tbl_extend("force", { fg = c.comment, italic = true }, s.comments),
+    Comment = vim.tbl_extend("force", { fg = c.comment, italic = false }, s.comments),
     Constant = vim.tbl_extend("force", { fg = c.const_ }, s.constants),
     String = vim.tbl_extend("force", { fg = c.string }, s.strings),
     Character = { fg = c.string },
@@ -33,7 +33,7 @@ return function(c, cfg)
     SpecialChar = { fg = c.tag },
     Tag = { fg = c.tag },
     Delimiter = { fg = c.punct },
-    SpecialComment = { fg = c.comment, italic = true },
+    SpecialComment = { fg = c.comment, italic = false },
     Underlined = { underline = true },
     Ignore = { fg = c.fg_dim },
     Error = { fg = c.danger },
@@ -50,11 +50,11 @@ return function(c, cfg)
     ["@boolean"] = { link = "Boolean" },
     ["@float"] = { link = "Float" },
     ["@constant"] = { link = "Constant" },
-    ["@constant.builtin"] = { fg = c.const_, italic = true },
+    ["@constant.builtin"] = { fg = c.const_, italic = false },
     ["@constant.macro"] = { fg = c.const_ },
 
     ["@function"] = { link = "Function" },
-    ["@function.builtin"] = vim.tbl_extend("force", { fg = c.func, italic = true }, s.functions),
+    ["@function.builtin"] = vim.tbl_extend("force", { fg = c.func, italic = false }, s.functions),
     ["@function.call"] = { link = "Function" },
     ["@function.macro"] = { link = "Function" },
     ["@function.method"] = { link = "Function" },
@@ -77,12 +77,12 @@ return function(c, cfg)
     ["@punctuation.special"] = { fg = c.tag },
 
     ["@variable"] = { fg = c.fg },
-    ["@variable.builtin"] = { fg = c.fg_dim, italic = true },
+    ["@variable.builtin"] = { fg = c.fg_dim, italic = false },
     ["@variable.parameter"] = { fg = c.fg },
     ["@variable.member"] = { fg = c.fg },
 
     ["@type"] = { link = "Type" },
-    ["@type.builtin"] = { fg = c.type, italic = true },
+    ["@type.builtin"] = { fg = c.type, italic = false },
     ["@type.definition"] = { link = "Type" },
     ["@attribute"] = { fg = c.tag },
     ["@property"] = { fg = c.fg },
