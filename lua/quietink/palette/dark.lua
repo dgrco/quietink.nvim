@@ -13,29 +13,29 @@ return {
   border = "#3a3a36",  -- window borders, separators
 
   -- text
-  fg = "#c4c4c0",       -- default text
-  fg_dim = "#8a8a84",   -- secondary / inactive text
+  fg = "#d2d2cb",       -- default text
+  fg_dim = "#9b9b8d",   -- secondary / inactive text
   comment = "#5b5b56",  -- comments
-  emphasis = "#e8e8e2", -- titles, bold UI text
+  emphasis = "#efefeb", -- titles, bold UI text
 
   -- syntax
-  keyword = "#9a9a94",   -- keywords, operators, statements
-  func = "#e8e8e2",      -- functions, methods (bright, the one accent)
-  type = "#8a948a",      -- types, classes, interfaces
-  string = "#a8b89a",    -- strings
-  const_ = "#b89a7a",    -- numbers, booleans, constants
-  punct = "#7a7a74",     -- punctuation, delimiters
-  tag = "#9aa8b8",       -- markup tags / attributes
+  keyword = "#aaaa9d",   -- keywords, operators, statements
+  func = "#efefeb",      -- functions, methods (bright, the one accent)
+  type = "#93a493",      -- types, classes, interfaces
+  string = "#b5c5a6",    -- strings
+  const_ = "#c4a787",    -- numbers, booleans, constants
+  punct = "#8f8f82",     -- punctuation, delimiters
+  tag = "#a6b5c5",       -- markup tags / attributes
 
   -- semantic
-  info = "#8aa0b8",
+  info = "#97adc5",
   hint = "#6b6b66",
-  warning = "#c2a06a",
-  danger = "#c0726a",
-  success = "#8aab84",
+  warning = "#cdac78",
+  danger = "#cb8078",
+  success = "#96b990",
 
   -- diff / git
-  added = "#8aab84",
-  changed = "#c2a06a",
-  removed = "#c0726a",
+  added = "#96b990",
+  changed = "#cdac78",
+  removed = "#cb8078",
 }

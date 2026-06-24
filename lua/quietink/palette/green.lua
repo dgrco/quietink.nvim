@@ -11,26 +11,26 @@ return {
   sel = "#202820",
   border = "#3a443a",
 
-  fg = "#bcc7b8",
-  fg_dim = "#80887a",
+  fg = "#c9d4c4",
+  fg_dim = "#8c9983",
   comment = "#56624f",
-  emphasis = "#e6eee2",
+  emphasis = "#eef4ec",
 
-  keyword = "#8fa284",
-  func = "#bcdfb2",     -- bright moss-green accent
-  type = "#7ea378",
-  string = "#9bc28e",
-  const_ = "#b8a47a",
-  punct = "#717d6c",
-  tag = "#a3b89a",
+  keyword = "#9bb18f",
+  func = "#c5e3bd",     -- bright moss-green accent
+  type = "#8ab183",
+  string = "#a8ce9c",
+  const_ = "#c4b187",
+  punct = "#81937a",
+  tag = "#afc5a6",
 
-  info = "#7fae8f",
+  info = "#8bbc9b",
   hint = "#6d7866",
-  warning = "#c2a06a",
-  danger = "#c0726a",
-  success = "#8fb27f",
+  warning = "#cdac78",
+  danger = "#cb8078",
+  success = "#9cbf8b",
 
-  added = "#8fb27f",
-  changed = "#c2a06a",
-  removed = "#c0726a",
+  added = "#9cbf8b",
+  changed = "#cdac78",
+  removed = "#cb8078",
 }

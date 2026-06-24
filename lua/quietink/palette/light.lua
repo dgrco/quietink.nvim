@@ -11,26 +11,26 @@ return {
   sel = "#dcd8cb",
   border = "#c8c3b3",
 
-  fg = "#3a382f",
-  fg_dim = "#726d5c",
+  fg = "#312e24",
+  fg_dim = "#6b654e",
   comment = "#928c78",
-  emphasis = "#201f1a",
+  emphasis = "#1a1a15",
 
-  keyword = "#5f5c4c",
-  func = "#2f3a2a",     -- darkest accent, the one "loud" element
-  type = "#4a6552",
-  string = "#3e6b4a",
-  const_ = "#7a5a28",
-  punct = "#85806e",
-  tag = "#3f5566",
+  keyword = "#57543f",
+  func = "#2a3426",     -- darkest accent, the one "loud" element
+  type = "#3e5d47",
+  string = "#33623f",
+  const_ = "#6e4f1f",
+  punct = "#78725c",
+  tag = "#344b5d",
 
-  info = "#3f6a92",
+  info = "#346088",
   hint = "#9c9683",
-  warning = "#8a5f1e",
-  danger = "#a13f38",
-  success = "#3e7a4a",
+  warning = "#7d5417",
+  danger = "#97352e",
+  success = "#33713f",
 
-  added = "#3e7a4a",
-  changed = "#8a5f1e",
-  removed = "#a13f38",
+  added = "#33713f",
+  changed = "#7d5417",
+  removed = "#97352e",
 }
