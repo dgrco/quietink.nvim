@@ -70,7 +70,7 @@ require("quietink").setup({
   cache = true,
 
   styles = {
-    functions = { bold = true },
+    functions = {},
     keywords = {},
     comments = {},
     strings = {},

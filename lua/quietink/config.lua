@@ -12,7 +12,7 @@ local defaults = {
   cache = true,  -- cache compiled highlights for faster startup
 
   styles = {
-    functions = { bold = true },
+    functions = {},
     keywords = {},
     comments = {},
     strings = {},
