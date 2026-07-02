@@ -1,0 +1,27 @@
+# Quietink (green) for Ghostty
+# Place under: ~/.config/ghostty/themes/quietink-green
+# Then in ~/.config/ghostty/config: theme = quietink-green
+
+background = 10140f
+foreground = c9d4c4
+cursor-color = c9d4c4
+cursor-text = 10140f
+selection-background = 202820
+selection-foreground = eef4ec
+
+palette = 0=#0b0e0a
+palette = 1=#cb8078
+palette = 2=#9cbf8b
+palette = 3=#cdac78
+palette = 4=#8bbc9b
+palette = 5=#afc5a6
+palette = 6=#8ab183
+palette = 7=#c9d4c4
+palette = 8=#8c9983
+palette = 9=#cb8078
+palette = 10=#9cbf8b
+palette = 11=#cdac78
+palette = 12=#8bbc9b
+palette = 13=#afc5a6
+palette = 14=#8ab183
+palette = 15=#eef4ec

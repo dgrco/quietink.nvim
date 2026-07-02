@@ -1,0 +1,27 @@
+# Quietink (blue) for Ghostty
+# Place under: ~/.config/ghostty/themes/quietink-blue
+# Then in ~/.config/ghostty/config: theme = quietink-blue
+
+background = 10131a
+foreground = c9cfd9
+cursor-color = c9cfd9
+cursor-text = 10131a
+selection-background = 212835
+selection-foreground = eef1f7
+
+palette = 0=#0b0d12
+palette = 1=#cb8078
+palette = 2=#8fb9ab
+palette = 3=#cdac78
+palette = 4=#8fb5df
+palette = 5=#adbbcc
+palette = 6=#88a1c0
+palette = 7=#c9cfd9
+palette = 8=#868f9f
+palette = 9=#cb8078
+palette = 10=#8fb9ab
+palette = 11=#cdac78
+palette = 12=#8fb5df
+palette = 13=#adbbcc
+palette = 14=#88a1c0
+palette = 15=#eef1f7

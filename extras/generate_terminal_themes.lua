@@ -130,6 +130,8 @@ local function gen_foot(variant, c)
   add("foreground=" .. h(c.fg))
   add("background=" .. h(c.bg))
   add("")
+  add("cursor=" .. h(c.bg) .. " " .. h(c.fg))
+  add("")
   add("regular0=" .. h(a.normal.black) .. "   # black")
   add("regular1=" .. h(a.normal.red) .. "   # red")
   add("regular2=" .. h(a.normal.green) .. "   # green")
@@ -164,12 +166,51 @@ local function gen_foot(variant, c)
   return table.concat(lines, "\n")
 end
 
+local function gen_ghostty(variant, c)
+  local a = ansi_map(c)
+  local lines = {}
+  local function add(s) table.insert(lines, s) end
+  local function h(hex) return strip_hash(hex) end
+
+  add("# Quietink (" .. variant .. ") for Ghostty")
+  add("# Place under: ~/.config/ghostty/themes/quietink-" .. variant)
+  add("# Then in ~/.config/ghostty/config: theme = quietink-" .. variant)
+  add("")
+  add("background = " .. h(c.bg))
+  add("foreground = " .. h(c.fg))
+  add("cursor-color = " .. h(c.fg))
+  add("cursor-text = " .. h(c.bg))
+  add("selection-background = " .. h(c.sel))
+  add("selection-foreground = " .. h(c.emphasis))
+  add("")
+  add("palette = 0=#" .. h(a.normal.black))
+  add("palette = 1=#" .. h(a.normal.red))
+  add("palette = 2=#" .. h(a.normal.green))
+  add("palette = 3=#" .. h(a.normal.yellow))
+  add("palette = 4=#" .. h(a.normal.blue))
+  add("palette = 5=#" .. h(a.normal.magenta))
+  add("palette = 6=#" .. h(a.normal.cyan))
+  add("palette = 7=#" .. h(a.normal.white))
+  add("palette = 8=#" .. h(a.bright.black))
+  add("palette = 9=#" .. h(a.bright.red))
+  add("palette = 10=#" .. h(a.bright.green))
+  add("palette = 11=#" .. h(a.bright.yellow))
+  add("palette = 12=#" .. h(a.bright.blue))
+  add("palette = 13=#" .. h(a.bright.magenta))
+  add("palette = 14=#" .. h(a.bright.cyan))
+  add("palette = 15=#" .. h(a.bright.white))
+  add("")
+
+  return table.concat(lines, "\n")
+end
+
 for _, variant in ipairs(variants) do
   package.loaded["quietink.palette." .. variant] = nil
   local raw = require("quietink.palette." .. variant)
 
   write_file(script_dir .. "alacritty/quietink-" .. variant .. ".toml", gen_alacritty(variant, raw))
   write_file(script_dir .. "foot/quietink-" .. variant .. ".ini", gen_foot(variant, raw))
+  write_file(script_dir .. "ghostty/quietink-" .. variant, gen_ghostty(variant, raw))
 end
 
 print("\nDONE")

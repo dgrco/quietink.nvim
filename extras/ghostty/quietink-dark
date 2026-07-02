@@ -1,0 +1,27 @@
+# Quietink (dark) for Ghostty
+# Place under: ~/.config/ghostty/themes/quietink-dark
+# Then in ~/.config/ghostty/config: theme = quietink-dark
+
+background = 121212
+foreground = efefeb
+cursor-color = efefeb
+cursor-text = 121212
+selection-background = 262626
+selection-foreground = efefeb
+
+palette = 0=#0a0a0a
+palette = 1=#cb8078
+palette = 2=#96b990
+palette = 3=#cdac78
+palette = 4=#97adc5
+palette = 5=#a6b5c5
+palette = 6=#93a493
+palette = 7=#efefeb
+palette = 8=#9b9b8d
+palette = 9=#cb8078
+palette = 10=#96b990
+palette = 11=#cdac78
+palette = 12=#97adc5
+palette = 13=#a6b5c5
+palette = 14=#93a493
+palette = 15=#efefeb
