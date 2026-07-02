@@ -4,7 +4,7 @@
 
 background = 10140f
 foreground = c9d4c4
-cursor-color = c9d4c4
+cursor-color = 9b9b8d
 cursor-text = 10140f
 selection-background = 202820
 selection-foreground = eef4ec
